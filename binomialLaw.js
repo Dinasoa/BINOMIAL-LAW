@@ -18,7 +18,7 @@ const fact = (n) => {
 
 //A function that will calculate a combination 
 
-const combinaison = (n,p) => {
+const combination = (n,p) => {
     return fact(n) / (fact(p)*fact(n-p))
 }
 
@@ -35,5 +35,5 @@ const pow = (base , exp) => {
 //The principal function : binomial law
 
 const binomial = (n,p,x) => {
-    return combinaison(n,x) * pow(p,x) * pow(1-p , n-x)
+    return combination(n,x) * pow(p,x) * pow(1-p , n-x)
 }
